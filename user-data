@@ -202,7 +202,7 @@ autoinstall:
     runcmd:
       - |
         cat > "/etc/sudoers.d/amad" << EOF
-        administrator ALL=(ALL:ALL) NOPASSWD: ALL
+        amad ALL=(ALL:ALL) NOPASSWD: ALL
         EOF  
   updates: security
   version: 1
