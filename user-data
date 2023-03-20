@@ -203,6 +203,6 @@ autoinstall:
       - |
         cat > "/etc/sudoers.d/amad" << EOF
         amad ALL=(ALL:ALL) NOPASSWD: ALL
-        EOF  
+        # EOF  
   updates: security
   version: 1
