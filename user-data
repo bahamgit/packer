@@ -203,7 +203,7 @@ autoinstall:
   user-data: # Commands here run during first boot (cannot be interactive)
     runcmd:
       - |
-        cat > "/etc/sudoers.d/administrator" << EOF
+        cat > "/etc/sudoers.d/amad" << EOF
         administrator ALL=(ALL:ALL) NOPASSWD: ALL
         EOF     
   updates: security
