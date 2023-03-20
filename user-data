@@ -12,6 +12,8 @@ autoinstall:
     - arches:
       - default
       uri: http://ports.ubuntu.com/ubuntu-ports
+  package_update: true
+  package_upgrade: true
   drivers:
     install: false
   identity:
@@ -26,11 +28,7 @@ autoinstall:
     toggle: null
     variant: ''
   locale: en_US.UTF-8
-  # network:
-  #   ethernets:
-  #     ens160:
-  #       dhcp4: true
-  #   version: 2
+  timezome: Europe/Paris
   ssh:
     allow-pw: true
     authorized-keys: []
@@ -205,6 +203,6 @@ autoinstall:
       - |
         cat > "/etc/sudoers.d/amad" << EOF
         administrator ALL=(ALL:ALL) NOPASSWD: ALL
-        EOF     
+        EOF  
   updates: security
   version: 1
