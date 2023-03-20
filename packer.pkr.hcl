@@ -64,4 +64,11 @@ source "vsphere-iso" "vm-packer" {
 build {
   name    = "vm creation"
   sources = ["source.vsphere-iso.vm-packer"]
+
+    # Add additional provisioning scripts here
+  # ...
+  provisioner "shell" {
+    script       = "/home/amad/packer/script.sh"
+    pause_before = "10s"
+  }
 }

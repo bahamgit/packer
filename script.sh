@@ -1,5 +1,5 @@
 #!/bin/bash -e
-clefAnsible="{{ sshPubPKR }}"
+clefAnsible="ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKTU4LbNRT7d441d9SA5yCzyUnSzveXs+aXUFgVcSN/TJ880HKoINpJGml1IoAIRbRIM5na8OUgNflPungvYHlY= user-ansible@ansible"
 sudo mkdir /home/ansible
 sudo mkdir /home/ansible/.ssh
 sudo useradd -d /home/ansible -s /usr/bin/bash ansible
