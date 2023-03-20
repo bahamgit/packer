@@ -26,11 +26,11 @@ autoinstall:
     toggle: null
     variant: ''
   locale: en_US.UTF-8
-  network:
-    ethernets:
-      ens160:
-        dhcp4: true
-    version: 2
+  # network:
+  #   ethernets:
+  #     ens160:
+  #       dhcp4: true
+  #   version: 2
   ssh:
     allow-pw: true
     authorized-keys: []
