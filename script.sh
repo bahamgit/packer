@@ -1,5 +1,5 @@
 #!/bin/bash -e
-clefuser-ansible="ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKTU4LbNRT7d441d9SA5yCzyUnSzveXs+aXUFgVcSN/TJ880HKoINpJGml1IoAIRbRIM5na8OUgNflPungvYHlY= user-user-ansible@user-ansible"
+clefuser_ansible="ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKTU4LbNRT7d441d9SA5yCzyUnSzveXs+aXUFgVcSN/TJ880HKoINpJGml1IoAIRbRIM5na8OUgNflPungvYHlY= user-user-ansible@user-ansible"
 sudo mkdir /home/user-ansible
 sudo mkdir /home/user-ansible/.ssh
 sudo useradd -d /home/user-ansible -s /usr/bin/bash user-ansible
