@@ -12,4 +12,5 @@ sudo chown user-ansible:user-ansible /home/user-ansible/.ssh/authorized_keys
 sudo chmod 600 /home/user-ansible/.ssh/authorized_keys
 sudo apt update
 sudo apt install python3 -y
+#
 sudo reboot
