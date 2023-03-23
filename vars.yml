@@ -1,0 +1,39 @@
+# VM General Settings
+vm_namePKR: "vm-packer"
+data_storePKR: "STORAGE_Amad"
+
+#VM OS Settings
+iso_storage_poolPKR1: "local"
+iso_filePKR1: "{{ iso_storage_poolPKR1  }}:iso/{{ distroiso }}.iso"
+
+#VM Disk
+disk_sizePKR1: "40960"
+
+#VM cloudinit
+cloudinitfilePKR: "/root/ansibleroles/packer/files/user-data"
+meta_dataPKR: "/root/ansibleroles/packer/files/meta-data"
+iso_storage_poolPKR2: "local"
+cloud_init_storage_poolPKR: "local"
+
+#VM Hardware
+cpuPKR: "4"
+memoryPKR: "8192"
+
+#VM NetworkCard
+netCardPKR: "vmxnet3"
+netPKR: "Amad - DMZ"
+#Networking
+ipPKR: "192.168.220.20"
+gwPKR: "192.168.220.1"
+maskPKR: "255.255.255.0"
+dnsPKR: "192.168.220.2"
+hostnamePKR: "Amad - Auto-Inst-Ubu"
+
+#SSH
+sshUserPKR: "amad"
+sshMdpPKR: "sdfgh"
+sshHostPKR: "192.168.220.20"
+sshPortPKR: "22"
+
+#Other
+scriptPKR1: "/root/ansibleroles/packer/files/script.sh"
